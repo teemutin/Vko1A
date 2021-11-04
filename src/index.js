@@ -19,6 +19,16 @@ function initializeCode() {
     /*const addComment = document.getElementById("comments");*/
     /*addComment.innerHTML = addComment.innerHTML + "hei\t";*/
   });
+  const removeCommentButton = document.getElementById("remove-comments");
+
+  removeCommentButton.addEventListener("click", function () {
+    console.log("toimii");
+    document.getElementById("comments").innerHTML = "";
+    /*var review = document.getElementById("text");
+    for (var i=0; li=review[i]; i++) {
+      review.parentNode.removeChild(li);
+    }*/
+  });
 }
 
 /*
