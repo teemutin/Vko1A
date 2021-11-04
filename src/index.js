@@ -12,7 +12,12 @@ function initializeCode() {
 
   addCommentButton.addEventListener("click", function () {
     const addComment = document.getElementById("comments");
-    addComment.innerHTML = addComment.innerHTML + "hei\t";
+    const review = document.getElementById("text");
+    let li = document.createElement("li");
+    li.textContent = review.value;
+    addComment.append(li);
+    /*const addComment = document.getElementById("comments");*/
+    /*addComment.innerHTML = addComment.innerHTML + "hei\t";*/
   });
 }
 
